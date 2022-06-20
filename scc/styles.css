@@ -3,6 +3,9 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
+    --footer-color: #2F303A;
+    --button-color: #188CE8;
+    --accent-white-color: rgba(255, 255, 255, 0.6);
 }
 body {
     background-color: var(--primary-white-color);
@@ -28,8 +31,11 @@ li {
     text-decoration: none;
 }
 
-.partlogo {
+.firstpart {
     color: var(--accent-color);
+}
+.secondpart {
+    color: var(--primary-white-color);
 }
 
 .navigation {
@@ -42,13 +48,18 @@ li {
     color: var(--title-text-color);
     text-decoration: none;
 }
+.current ,
 .navigation .link:hover ,
 .navigation .link:focus {
+    color: var(--accent-color);
+}
+.navigation-link:current {
     color: var(--accent-color);
 }
 .navigation.contacts .link {
    color: var(--primary-text-color);
 }
+
 .contacts .link:hover ,
 .contacts .link:focus {
     color: var(--accent-color);
@@ -65,7 +76,7 @@ li {
     color: var(--primary-white-color);
 }
 .headline {
-    background-color: #2F303A; 
+    background-color: var(--footer-color); 
 }
 .hero-title {
     font-family: inherit;
@@ -81,19 +92,21 @@ li {
 }
 .hero-title:hover,
 .hero-title:focus {
-    background-color: #188CE8;
+    background-color: var(--button-color);
 }
 /* < !-- Наши преимущества --> */
 
 .benefit {
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.14;
-   color: var(--title-text-color)
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.44;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
 }
 
 .benefit-list {
-    font-weight: 400;
+    
     font-size: 14px;
     line-height: 1.7;
 }
@@ -111,13 +124,13 @@ li {
     color: var(--title-text-color);
 }
 .prof-team {
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 1.19px;
 }
 /* Футер */
 footer {
-    background-color: #2F303A;
+    background-color: var(--footer-color);
 }
 .adress {
     font-style: normal;
@@ -128,7 +141,7 @@ footer {
     color: var(--primary-white-color);
 }
 .adress .link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--accent-white-color);
 }
 .adress .link:hover,
 .adress .link:focus {
@@ -163,7 +176,7 @@ footer {
     text-decoration: none;
 }
 .projects-type {
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 1.88;
     color: var(--primary-text-color);
